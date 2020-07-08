@@ -1,0 +1,32 @@
+s1 = "jbzchixyxcxfqjnjmiasntcprcskiivbfzxjaohtaejmusmefigtzettecygkzzlmlbflkiemsovrqkarzsgrgilxteokjemfhpqabufpliyhizsenlynufjsqnosvdkkciijvxykgjevlxcggfsnbipvephmheeqajkrbemzxlfmetnyrsmtdisrccglfvegxvepghmczavkrqxfoijhqnsihckuhvhdyzjiopzcikryykimvfzesgahkxjgxdfcyjpmvmouegrvjgjoxudpntcpyzsabsaetiaeyvdyttnfunkkpkcnxnpmhtxvnozxplhsqixkrgnpaxtvaojuitdiiixtfschpjfrgoaffolkpfbpsbdacufyqloidkgvuntnuiumvcckrvdepcscenvlaffmldeohhxibznfshehgqevbdljvurefbvvlzlpkvusdibytomjrkcitubfetvqcnlkoghxqpzcfizgzccjponmepcvtvjccfzxnxnhipsnqkqgemmqdeacnphoivlbdqzyafjckepdqokrmkhjzzjbijugnqkaaezbguyhjgtqqpgfbizhjaejllodtusjgbolkrmrynmkdvtzkfaovieccrhlzlusyxchyryzirvnrknrzvfmnilvcxzjauyajhaavprjybsgeijspvjaxugeralbjnccyhimafuiexgftzxjzzizprdmopvximdvjmoshirkvcubjyhdvutzzcmardemkzlpfayclmpatmreoycgeccgcdnbvovvvvhiffodetqthtbenpnhimbyevlqjhqtgjsioazjtelvbpyihclhqayxtgrkkbpmdqggepczzryyrmruulsjgzjzacrcdkmxmobhrcdiatullfczxlvavyrqzgndbozblozqoohtbqlqelbaipcqyykgpdpxkgdyqvhyhuogbtjqkilrmdfhljrugvbljdsqufaclhajkmhydykgxvfvayjlcdeqfhohuuqzofvuamxjgkhjupqkyzxnmxzatpumutgrhippzsjlgjbpfyofrjunpxkfvpjxkqgjsdxaotdqqtjhbmmhcqzskahjcxblcyxdhpfqbbmxuxgydnvvvhmytoshbjghpaqmexflmincpnhutgulmbckqzhilydqnietdmketagxygynpbktvetkaqoihhmlqdiytgdligdoycnnpvpiehngoxqdxqzcjobgtzbmlomptsipinsbapeeqipjievsjazayebtnbuvizgxhimngceavogbzmrmqdkqxatxnbnxnciouljshvgdapdmvvvhejvzphafkvospycdqebvrogfsgdczfrhyqvnkdvxxtsejlvcbpeeajvucllhhpfmqfctdfanbayhglfzrdptgxbnvpqoqmqlidifgmdeklvayxitjiyndhmjujsoqzmxvyjgztrfelxjqlchmgkzmkafttvxgnudkkcqnot"
+s2 = "dxehkupglkaajohzbekahlbgcoxkopopcdevojqsaabbozmeykpgcqjsfzhxgdlscldvvsxcrgaxhjpidpcngrarjgbcgdipjpvjnhepaifsvboljiprmapgrffuasaanhmqdficmdtollxdtntzkfqetzrnjvdmayellsvaytstgmzbednrfpkbstaudtboxsphxorsfblihdgyejbomsgjuhlsvfafsdcqzyfqfaafiujdgqlpqgojubrqfkyribrvysvxbcnvxfoysrbveeeohsyzluyjumxrmikeezlxchentzkfvqhsytshyqdzczcphohymlyxlphlzrvocrqigexlbnndtshqmnbekorqobuhcgvziolqzqqkkbialvhgsgyiclmjkxunpjnovkvhzembctticfuhuavsjzfnubdyrfvfbzcxedayytivhuyfhvpcrzsxaxsosmqzhuapfgmdtlaigesrbsxicjtdguchdeucnhtuotpazemxszosafsuymxxzlzohrksdzudtjkbmekakygvmeneqfxquiolsocnhgalcexzjelmisniocdxbsbkejmvbbzayxdrszeruyzfsgoagddalceivzuqhiyfqirqtvkjkkhozlpbthvcqkzglqcgkylxsvoigvuocpkzcydirevjmzgrlixbeyqcvkuxovayjzslhxfolykklurmccrcyacxlzplxinbcotfbronigtfjthoqiuasiylpjmrkklmfeoeiqkguhenzcanqdjffztqigzpbhgisunqdsmbokpnzgextfkbtuzpxjdqtvecsglnprmbzhapkixpgkmpcjybucvgvdaxknhkoldrsrmvtxyamarhgurjridzxhkcxskloleikgcvizaavnccxujcbqmivpzypktxtkropbkfbvqnxdeygjoxhvshvgojpfozmfufzbebsfrqpjbcnostyauchzcryqyofiupgesbnnytnfxgodikltnqicxzutkflxrmloqktglsixsyrrduarsaqjmjlvlgskysycdpibmrrdchtuagvpdhqqasslmunyaizszauduvbhhvgqogxfeedfyycjpabgpxxqgplxyatcghpridotcsdfpuvmqbrqxiadusvskmoflmgyzqivkmizsrjtbkbrstcixtrvlzasnzrjvakuugzcanyffrnvbqmijvsrszmeujouvblcikrknpnmooplxmynulrsyfhbeepgjedexkqusafsmnllirimmtyknkdvacnkjgbetvlomykzeatfrmregvfpicskkaxdbcmcjkadkqqshppmtmaujsthiceyyoicbfrhodvlolelgelsrmsykqlglotlyfxbjderyzsibxlsvpbzfhxbugzvhgavbseevohbmracxoaukpjopeqvjmmcjebcmdqsnctcdonoshumbjmbosadtqpxjaedjhkxulzfyzftxu"
+k = 5
+n = len(s1)
+f = [[0 for x in range(n + 2)] for y in range(n + 2)]
+
+
+def found(leng):
+    for _i in range(leng, n + 1):
+        for _j in range(leng, n + 1):
+            if f[_i][_j] - f[_i - leng][_j - leng] <= k:
+                return True
+    return False
+
+
+for i in range(0, n):
+    for j in range(0, n):
+        if s1[i] == s2[j]:
+            f[i + 1][j + 1] = f[i][j]
+        else:
+            f[i + 1][j + 1] = f[i][j] + 1
+
+low = 0
+high = n
+while low < high:
+    mid = (low + high + 1) // 2
+    if found(mid):
+        low = mid
+    else:
+        high = mid - 1
+
+print(low)
