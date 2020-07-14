@@ -1,7 +1,7 @@
 packets = [1, 2, 3, 4, 5, 6, 7, 10, 10, 10]
 k = 3
 n = len(packets)
-packets.sort();
+packets.sort()
 
 s = [0 for x in range(0, n)]
 s[0] = packets[0]
